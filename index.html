@@ -22,7 +22,7 @@
     <header class="min-vh-100">
        <div class="main-block">
            <div class="main-text text-center">Vivers</div>
-           <div class="main-footer text-center">Web Developer</div>
+           <div class="main-footer text-center" id="main-footer">Web Developer</div>
        </div>
        <div class="main-icon d-flex justify-content-center">
            <div class="icons text-center">
@@ -39,15 +39,15 @@
     <section>
         <div id="projects">
             <div class="projects-header">
-            <div class="projects-text d-flex justify-content-center">Projects</div>
+            <div class="projects-text d-flex justify-content-center" id="projectsText">Projects</div>
         </div>
         <div class="projects-body mt-5">
             <div class="project row pb-5 justify-content-between">
-                <div class="card col-11 bg-secondary pt-4 youngel-card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                <div class="card col-11 bg-secondary pt-4 youngel-card col-xl-3 col-lg-3 col-md-3 col-sm-3 ml-sm-5 ml-md-5 ml-lg-5 ml-xl-5">
                     <img class="rounded mx-auto d-block youngel-img" src="https://raw.githubusercontent.com/youngel-ru/youngel/master/src/img/logo.png" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Youngel</h5>
-                          <p class="card-text">Online chat without registration</p>
+                          <p class="card-text" id="cardYoungel">Online chat without registration</p>
                         </div>
                         <div class="card-badges">
                           <span class="card-badge" style="background-color: #0f8a3e;">node.js</span>
@@ -58,12 +58,28 @@
                         </div>
                 </div>
 
+                <div class="card col-11 bg-secondary pt-4 youngel-card col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-2">
+                    <img class="rounded mx-auto d-block youngel-img" src="https://imgur.com/qjNpHZB.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">StarRevenge</h5>
+                          <p class="card-text" id="cardStarRevenge">Discord bot for StarRevenge project</p>
+                        </div>
+                        <div class="card-badges">
+                          <span class="card-badge" style="background-color: #0f8a3e;">node.js</span>
+                          <span class="card-badge" style="background-color: #1690F0;">discord.js</span>
+                        </div>
+                        <div class="card-body">
+                          <a href="https://github.com/Vivers0/StarRevenge"><button type="button" class="btn btn-dark">GitHub</button></a>
+                          <button type="button" class="btn btn-danger disabled" id="inDevelop">In develop</button>
+                        </div>
+                </div>
 
-                <div class="card col-11 bg-secondary pt-4 koln-card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+
+                <div class="card col-11 bg-secondary pt-4 koln-card col-xl-3 col-lg-3 col-md-3 col-sm-3 mr-sm-5 mr-md-5 mr-lg-5 mr-xl-5">
                     <img class="rounded mx-auto d-block koln-img" src="https://camo.githubusercontent.com/358639ce833393643cd0b4b06515b53ca2d20158/68747470733a2f2f696d6775722e636f6d2f6e596e445464502e706e67" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Koln</h5>
-                          <p class="card-text">Discord Moderation Bot</p>
+                          <p class="card-text" id="cardKoln">Discord Moderation Bot</p>
                         </div>
                         <div class="card-badges">
                             <span class="card-badge" style="background-color: #0f8a3e;">node.js</span>
@@ -78,7 +94,39 @@
         </div>
     </section>
     <footer class="page-footer font-weightnormal bg-secondary">
+      <div class="lang-banner d-flex justify-content-center pt-5">
+        <button type="button" class="btn btn-dark lang-ru mr-3" onclick="langRu()">RU</button>
+        <button type="button" class="btn btn-dark lang-en" onclick="langEn()">EN</button>
+      </div>
         <div class="footer-copyright text-center py-3">2020: Created by Savva Povetkin</div>
     </footer>
+
+    
+  <script>
+    const mainFooter = document.getElementById("main-footer");
+    const projectsText = document.getElementById("projectsText");
+    const cardYoungel = document.getElementById("cardYoungel");
+    const cardStarRevenge = document.getElementById("cardStarRevenge");
+    const inDevelop = document.getElementById("inDevelop");
+    const cardKoln = document.getElementById("cardKoln");
+
+    function langRu() {
+      mainFooter.innerText = "Web Разработчик"
+      projectsText.innerText = "Проекты"
+      cardYoungel.innerText = "Онлайн чат без регистрации"
+      cardStarRevenge.innerText = "Discord бот для проекта StarRevenge"
+      inDevelop.innerTextc = "В разработке"
+      cardKoln.innerText = "Discord бот с модулями админа"
+    }
+
+    function langEn() {
+      mainFooter.innerText = "Web Developer"
+      projectsText.innerText = "Projects"
+      cardYoungel.innerText = "Online chat without registration"
+      cardStarRevenge.innerText = "Discord bot for StarRevenge project"
+      inDevelop.innerTextc = "In develop"
+      cardKoln.innerText = "Discord Moderation Bot"
+    }
+  </script>
 </body>
 </html>
