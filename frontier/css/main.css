@@ -3,15 +3,24 @@
 * {
     font-family: 'Roboto', sans-serif;
 }  
+body {
+  margin: 0 200px 0 200px;
+}
 
-/*  Header */
-/* header {
-  display: -ms-flexbox !important;
-  display: flex !important;
+ /* Header  */
+header, nav, .main {
+  margin: 0 200px 0 200px;
+}
 
-  -ms-flex-pack: justify !important;
-  justify-content: space-between !important;
-} */
+.header-main-text {
+  font-size: 25px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.header-info {
+  margin-top: 40px;
+}
 
 .telephone {
   font-size: 25px;
@@ -32,74 +41,30 @@
 
 /*  Menu */
 
-.menu-button > button {
-  padding: 15px 40px;
-}
-/* 
-.menu-button > button {
-  margin-left: 30px;
-} */
-
-.menu-button > button:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+nav {
+  margin-left: 400px;
 }
 
-.menu-button > button:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-} */
-
-
+.menu-button > button {
+  padding: 15px 60px !important;
+}
 
 .email > h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
-/* 
-.news {
-  display: -ms-flexbox !important;
-  display: flex !important;
+
+
+
+.main {
+  margin-top: 120px;
 }
 
-/* .card {
-  margin-left: 10%; 
-} */
-
-/* .footer-menu {
-  font-weight: 700 !important;
-  text-align: center !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex-pack: center !important;
-  justify-content: center !important;
-}  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 900px;
+  /* position: relative; */
   margin: auto;
+
 }
   /* Hide the images by default */
   .mySlides {
@@ -185,4 +150,11 @@
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+
+  .news {
+    border: 1px solid black;
+    width: 550px;
+    max-height: 507px;
   }
