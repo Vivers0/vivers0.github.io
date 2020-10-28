@@ -14,8 +14,23 @@ body {
   margin: 0 100px 0 100px;
 }
 
-.frontier-logo, .heathouse-logo {
-  max-width: auto;
+header {
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.frontier-logo {
+  width: 70%;
+}
+
+.heathouse-logo {
+  display: inline-block;
+  height: 100%;
+  max-width: 100%;
+
 }
 
 .header-main-text {
@@ -165,7 +180,7 @@ footer {
 
 @media (min-width: 1200px) {
   header, nav, .production {
-    margin: 0 200px 0 200px;
+    margin: 0 100px 0 100px;
   }
   
   .frontier-logo {
@@ -176,6 +191,7 @@ footer {
   .header-main-text {
     font-size: 23px;
     text-align: center !important;
+    margin-top: 45px;
   }
 
   .menu-button > button {
@@ -203,10 +219,13 @@ footer {
     margin: 0 50px 0 50px;
   }
 
-
   .header-main-text {
     margin-top: 80px;
     font-size: 30px;
+  }
+
+  .header-info {
+    margin-top: 30px;
   }
 
   .telephone {
@@ -229,21 +248,34 @@ footer {
     margin: 0 20px 0 20px;
   }
 
+  .header-logo {
+    margin: auto;
+  }
+
+  .header-info {
+    display: none;
+  }
+
+  .info-for-mobile {
+    display: inline;
+  }
+
   nav {
     margin-left: 70px;
   }
 
-  .telephone {
-    font-size: 20px;
+  .telephone-mobile {
+    font-size: 30px;
     margin-top: 20px;
   }
 
-  .email, .schedule {
-    font-size: 15px;
+  .email-mobile, .schedule-mobile, .address-mobile {
+    font-size: 18px;
   }
 } 
 
 @media (max-width: 768px) {
+
   .header-info {
     display: none;
   }
@@ -268,14 +300,22 @@ footer {
   }
 
   .frontier-logo {
-    width: 240px;
+    margin-left: 60px;
+  }
+
+  .heathouse-logo {
+    margin-left: 130px;
   }
 
   .header-main-text {
     font-size: 17px;
   }
+  
+  .telephone-mobile {
+    font-size: 25px;
+  }
 
-  .telephone-mobile, .email-mobile, .schedule-mobile, .address-mobile {
+  .email-mobile, .schedule-mobile, .address-mobile {
     font-size: 15px;
   }
 
