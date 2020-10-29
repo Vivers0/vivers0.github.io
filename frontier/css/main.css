@@ -9,6 +9,11 @@ body {
   margin: 0 200px 0 200px;
 }
 
+/* .header-per {
+  background-color: #e0f6ff;
+  margin: 0;
+} */
+
  /* Header */
  header, nav, .main, .production {
   margin: 0 100px 0 100px;
@@ -300,11 +305,11 @@ footer {
   }
 
   .frontier-logo {
-    margin-left: 60px;
+    margin: auto;
   }
 
   .heathouse-logo {
-    margin-left: 130px;
+    margin: auto;
   }
 
   .header-main-text {
@@ -321,5 +326,6 @@ footer {
 
   .news {
     font-size: 12px;
+
   }
 }
