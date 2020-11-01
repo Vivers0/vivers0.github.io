@@ -159,8 +159,8 @@ header {
 
 .news {
   border: 1px solid black;
-  max-height: 507px;
-  max-width: 550px;
+  /* max-height: 507px;
+  max-width: 550px; */
   margin: auto;
 }
 
@@ -301,7 +301,7 @@ footer {
 
 @media (max-width: 576px) {
   header, .main, .production {
-    margin: 0;
+    margin: 0 16px 0 16px;
   }
 
   .frontier-logo {
