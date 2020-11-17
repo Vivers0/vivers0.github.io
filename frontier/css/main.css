@@ -79,9 +79,10 @@ header {
 
 .news {
   border: 1px solid black;
-  /* max-height: 507px;
-  max-width: 550px; */
-  margin: auto;
+  max-height: 530px;
+  /* max-width: 550px; */
+  /* margin: auto; */
+  overflow-y: auto;
 }
 
 .card-header {
@@ -120,7 +121,6 @@ footer {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
 
 @media (min-width: 1200px) {
   header, .production {

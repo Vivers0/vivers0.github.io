@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontier | Дизайнерам</title>
     <link href='../css/main.css' rel="stylesheet">
     <link rel="stylesheet" href="../css/fontawesome.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+      .text-documentation {
+        font-size: xx-large;
+        font-family: 'Roboto Slab', sans-serif;
+      }
+
+      .button-mobile {
+        display: none;
+      }
+
+      .button-mobile > button {
+        padding: 20px 60px;
+      }
+
+      @media (max-width: 768px) {
+        .button-mobile {
+          display: flex;
+        }
+
+        iframe {
+          display: none;
+        }
+      }
+    </style>
 </head>
-<body>
+<body class="container-fluid p-0 m-0">
     <header class="d-flex justify-content-between">
         <div class="header-logo d-flex">
-          <div class="d-flex">
-            <a href="../index.html"><img src="../img/heathouse-logo.png" alt="HeatHouse Logo" class="heathouse-logo img-fluid"></a>
-            <a href="../index.html"><img src="../img/frontier-logo.png" alt="Frontier Logo" class="mt-3 frontier-logo img-responsive"></a>
-          </div>
+          <a href="../index.html"><div class="row">
+            <img src="../img/heathouse.png" alt="HeatHouse Logo" class="heathouse-logo">
+            <img src="../img/frontier-logo.png" alt="Frontier Logo" class="mt-3 frontier-logo">
+          </div></a>
         </div>
         
         <div class="header-info">
@@ -60,11 +86,23 @@
           <button onclick="document.location='#'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Дизайнерам</button>
           <button onclick="document.location='./buy.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Где купить</button>
           <button onclick="document.location='./contact.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Контакты</button>
-          <button onclick="document.location='#'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Primary</button>
+          <button onclick="document.location='./diller.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Как стать дилером</button>
         </div>
       </nav>
-
       <!-- Information -->
-
+      <div class="text-center text-documentation mb-5">Документация для дизайнеров</div>
+      <div class="row">
+        <iframe src="../for_designers.pdf" class="m-auto" style="width:1000px; height:1000px;" frameborder="0"></iframe>
+      </div>
+      <div class="button-mobile row">
+        <form method="get" action="../for_designers.pdf" class='m-auto'>
+          <button type="submit" class="btn btn-primary btn-lg">Скачать</button>
+       </form>
+      </div>
+      
+      <!-- Footer -->
+      <footer class="footer text-center">
+        2020г.
+      </footer>
 </body>
 </html>

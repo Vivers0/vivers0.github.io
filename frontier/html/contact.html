@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontier | Контакты</title>
     <link href='../css/main.css' rel="stylesheet">
     <link rel="stylesheet" href="../css/fontawesome.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <style>
+       
+    </style>
 </head>
-<body>
+<body class="container-fluid p-0 m-0">
     <header class="d-flex justify-content-between">
         <div class="header-logo d-flex">
-          <div class="d-flex">
-            <a href="../index.html"><img src="../img/heathouse-logo.png" alt="HeatHouse Logo" class="heathouse-logo img-fluid"></a>
-            <a href="../index.html"><img src="../img/frontier-logo.png" alt="Frontier Logo" class="mt-3 frontier-logo img-responsive"></a>
-          </div>
+          <a href="../index.html"><div class="row">
+            <img src="../img/heathouse.png" alt="HeatHouse Logo" class="heathouse-logo">
+            <img src="../img/frontier-logo.png" alt="Frontier Logo" class="mt-3 frontier-logo">
+          </div></a>
         </div>
         
         <div class="header-info">
@@ -60,11 +63,20 @@
           <button onclick="document.location='./designers.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Дизайнерам</button>
           <button onclick="document.location='./buy.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Где купить</button>
           <button onclick="document.location='#'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Контакты</button>
-          <button onclick="document.location='#'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Primary</button>
+          <button onclick="document.location='./diller.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Как стать дилером</button>
         </div>
       </nav>
-
       <!-- Information -->
-
+      <div class="map row">
+        <div style="position:relative;overflow:hidden;" class="m-auto">
+          <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+          <a href="https://yandex.ru/maps/213/moscow/house/1_ya_vladimirskaya_ulitsa_10a/Z04YcQBiQUEBQFtvfXt0eX1gYA==/?ll=37.772846%2C55.758134&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">1-я Владимирская улица, 10А — Яндекс.Карты</a>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUARCGDPA" width="800" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer text-center">
+        2020г.
+      </footer>
 </body>
 </html>
