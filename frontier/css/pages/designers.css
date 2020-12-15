@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+      .text-documentation {
+        font-size: xx-large;
+        font-family: 'Roboto Slab', sans-serif;
+      }
+
+      .button-mobile {
+        display: none;
+      }
+
+      .button-mobile > button {
+        padding: 20px 60px;
+      }
+
+      @media (max-width: 768px) {
+        .button-mobile {
+          display: flex;
+        }
+
+        iframe {
+          display: none;
+        }
+      }

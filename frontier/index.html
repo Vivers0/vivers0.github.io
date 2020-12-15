@@ -6,16 +6,15 @@
     <title>Frontier</title>
     <!-- CSS -->
     <link href='./css/main.css' rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap/fontawesome.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
     
 </head>
 <body class="container-fluid p-0 m-0">
   <div class="header-per pb-5">
   <header class="d-flex pt-3">
     <div class="header-logo">
-      <a href="../index.html"><div class="row">
+      <a href="/"><div class="row">
         <img src="img/heathouse.png" alt="HeatHouse Logo" class="heathouse-logo">
         <img src="img/frontier-logo.png" alt="Frontier Logo" class="mt-3 frontier-logo">
       </div></a>
@@ -53,23 +52,23 @@
     </div>
   </div>
 
-  <div class="header-main-text font-weight-bold text-center">Офицальное представительство Frontier в России</div>
+  <div class="header-main-text font-weight-bold">Офицальное представительство Frontier в России</div>
   </div>
     <!-- Menu -->
-  <nav class="mt-5">
+  <nav>
     <div class="menu-button row">
-      <button onclick="document.location='./html/taiwan.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Taiwan</button>
-      <button onclick="document.location='./html/frontier.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Frontier</button>
-      <button onclick="document.location='./html/designers.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Дизайнерам</button>
-      <button onclick="document.location='./html/buy.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Где купить</button>
-      <button onclick="document.location='./html/contact.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Контакты</button>
-      <button onclick="document.location='./html/diller.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Как стать дилером</button>
+      <button onclick="document.location='./pages/taiwan.html'" class="btn btn-outline-primary marleft col-md-4 col-xl-4 mt-2">Taiwan</button>
+      <button onclick="document.location='./pages/frontier.html'" class="btn btn-outline-primary marleft col-md-4 col-xl-4 mt-2">Frontier</button>
+      <button onclick="document.location='./pages/designers.html'" class="btn btn-outline-primary col-md-4 col-xl-4 mt-2">Дизайнерам</button>
+      <button onclick="document.location='./pages/buy.html'" class="btn btn-outline-primary  col-md-4 col-xl-4 mt-2">Где купить</button>
+      <button onclick="document.location='./pages/contact.html'" class="btn btn-outline-primary  col-md-4 col-xl-4 mt-2">Контакты</button>
+      <button onclick="document.location='./pages/diller.html'" class="btn btn-outline-primary  col-md-4 col-xl-4 mt-2">Как стать дилером</button>
     </div>
   </nav>
 
   <!-- Slide Show -->
-  <div class="main row">
-    <div id="carouselExampleIndicators" class="carousel slide p-0 col-xl-7" data-ride="carousel">
+  <div class="main">
+    <div id="carouselExampleIndicators" class="carousel slide p-0" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -95,44 +94,42 @@
         <span class="sr-only">Next</span>
       </a>
     </div> 
+  </div>
 
-    <!-- News -->
-    <div class="news p-0 ml-xl-5 mt-xl-0 mb-0 col-xl-4 col-lg-10">
-      <div class="panel-news mb-xl-2">
-        <div class="card">
-          <div class="card-header">Новости</div>
-          <a href="./html/news/news1.html" class="text-decoration-none text-dark"><div class="card-body">
-            <h5 class="card-title">ВЫСТАВКА HI-TECH BUILDING - 2020 В МОСКВЕ</h5>
-            <p class="card-text">С 27 по 29 октября 2020 года в Москве проходила выставка...</p>
-          </div>
+
+  <!-- News -->
+  <div class="news">
+    <div class="card-deck">
+      <div class="card" onclick="window.location='./pages/news/news_1.html'">
+        <div class="card-body">
+          <h5 class="card-title">ВЫСТАВКА HI-TECH BUILDING - 2020 В МОСКВЕ</h5>
+          <p class="card-text">С 27 по 29 октября 2020 года в Москве проходила выставка...</p>
         </div>
-      </div></a>
-      <div class="panel-news mb-xl-2 mb-lg-3">
-        <div class="card">
-          <a href="./html/news/news2.html" class="text-decoration-none text-dark"><div class="card-body">
-            <h5 class="card-title">НОВОЕ ВИДЕО НА YOUTUBE</h5>
-            <p class="card-text">На канале магазина "ГреемВас" вышло новое...</p>
-            </div>
+        <div class="card-footer">
+          <small class="text-muted">10.12.2020</small>
         </div>
-      </div></a>
-      <div class="panel-news mb-xl-2">
-        <div class="card">
-          <a href="./html/news/news3.html" class="text-decoration-none text-dark"><div class="card-body">
-            <h5 class="card-title">РЕЙТИНГ ТЕРМОРЕГУЛЯТОРА TH-0502RS-BLACK</h5>
-            <p class="card-text">На Google Покупки терморегулятор поднялся на...</p>
-          </div>
+      </div>
+      <div class="card" onclick="window.location='./pages/news/news_2.html'">
+        <div class="card-body">
+          <h5 class="card-title">НОВОЕ ВИДЕО НА YOUTUBE</h5>
+          <p class="card-text">TНа канале магазина "ГреемВас" вышло новое...</p>
         </div>
-      </div></a>
-      <!-- <div class="panel-news">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
+        <div class="card-footer">
+          <small class="text-muted">05.12.2020</small>
         </div>
-      </div> -->
+      </div>
+      <div class="card" onclick="window.location='./pages/news/news_3.html'">
+        <div class="card-body">
+          <h5 class="card-title">РЕЙТИНГ ТЕРМОРЕГУЛЯТОРА TH-0502RS-BLACK</h5>
+          <p class="card-text">На Google Покупки терморегулятор поднялся на...</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">03.12.2020</small>
+        </div>
+      </div>
     </div>
   </div>
+
 
 
   <!-- Production -->

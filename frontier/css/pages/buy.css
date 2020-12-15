@@ -1,0 +1,27 @@
+.card {
+    cursor: pointer;
+  }
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    body, .card-deck {
+        margin: 0 200px 0 200px;
+    }
+            
+    .frontier-text {
+        font-size: 15px;
+    }
+  }

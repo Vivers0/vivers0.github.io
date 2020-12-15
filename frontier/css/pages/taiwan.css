@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.taiwan-text {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+@media (min-width: 1200px) {
+    body, .taiwan-text {
+        margin: 0 200px 0 200px;
+    }
+  
+    .taiwan-text {
+        font-size: 15px;
+    }
+}
