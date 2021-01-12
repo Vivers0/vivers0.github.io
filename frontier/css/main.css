@@ -60,6 +60,13 @@ header {
 
 /*  Menu */
 
+.nav-color {
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 7px;
+  background-color:#ebf2ff;
+}
+
 .menu-button {
   margin: auto;
   margin-left: 1em;
@@ -74,7 +81,7 @@ header {
 /* Main */
 
 .main {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /* News */
@@ -145,9 +152,9 @@ footer {
     padding: 15px 70px !important;   
   }
 
-  nav {
+  /* nav {
     margin-bottom: 50px;
-  }
+  } */
 
   .menu-button > button {
     padding: 15px 50px !important;
@@ -199,7 +206,7 @@ footer {
 
   nav {
     margin-left: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .news {
