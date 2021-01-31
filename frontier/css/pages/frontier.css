@@ -5,11 +5,16 @@
     
 }
 
+.menu-button {
+    margin-top: -10px;
+    margin-bottom: 3rem;
+}
+
 @media (min-width: 1200px) {
     body, .frontier-text {
         margin: 0 200px 0 200px;
       }
-
+    
     .frontier-text {
         font-size: 15px;
     }
