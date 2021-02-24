@@ -1,0 +1,61 @@
+- 
+    cards = [
+            { 
+                'name': 'Youngel',
+                'info': 'Online chat without registration', 
+                'github': 'https://github.com/Vivers0/youngel', 
+                'image': 'https://raw.githubusercontent.com/youngel-ru/youngel/master/src/img/logo.png', 
+                'id': 'cardYoungel',
+                'class': 'youngel-img',
+                'badge': [{'color': '0f8a3e', 'name': 'node.js'}, {'color': '4a4a4a', 'name': 'socket.io'}]
+            },
+            {
+                'name': 'StarRevenge',
+                'info': 'Discord bot for StarRevenge project', 
+                'github': 'https://github.com/Vivers0/StarRevenge', 
+                'image': 'https://i.imgur.com/qjNpHZB.png', 
+                'id': 'cardStarRevenge',
+                'class': 'youngel-img',
+                'badge': [{'color': '0f8a3e', 'name': 'node.js'}, {'color': '1690F0', 'name': 'discord.js'}]
+            },
+            {
+                'name': 'Koln',
+                'info': 'Discord Moderation Bot', 
+                'github': 'https://github.com/DiscordShip/Koln', 
+                'image': 'https://camo.githubusercontent.com/358639ce833393643cd0b4b06515b53ca2d20158/68747470733a2f2f696d6775722e636f6d2f6e596e445464502e706e67', 
+                'id': 'cardKoln',
+                'class': 'koln-img',
+                'badge': [{'color': '0f8a3e', 'name': 'node.js'}, {'color': '1690F0', 'name': 'discord.js'}, {'color' :'F99F3A', 'name': 'mysql'}]
+            },
+            {
+                'name': 'Glasgow',
+                'info': 'Discord bot for parsing anime theme', 
+                'github': 'https://github.com/Vivers0/Glasgow', 
+                'image': 'https://imgur.com/OB6SJKx.png', 
+                'id': 'cardGlasgow',
+                'class': 'youngel-img',
+                'badge': [{'color': '0f8a3e', 'name': 'node.js'}, {'color': '1690F0', 'name': 'discord.js'}]
+            },
+            {
+                'name': 'Frontier',
+                'info': 'Offical site "Frontier" in Russia', 
+                'github': '#', 
+                'image': 'https://imgur.com/XG9XjYd.png', 
+                'id': 'cardFrontier',
+                'class': 'youngel-img',
+                'badge': []
+            }
+        ];
+
+for i in cards
+    .card.col-11.bg-secondary.pt-4.youngel-card.col-xl-3.col-lg-3.col-md-3.col-sm-3.ml-sm-5.ml-md-5.ml-lg-5.ml-xl-5
+        img(class='rounded mx-auto d-block youngel-img', src=i.image)
+        .card-body
+            .card-title= i.name
+            p.card-text#i.id= i.info
+        .card-badges
+            for t in i.badge 
+                span(class='card-badge' style='background-color: #'+t.color)= t.name
+        .card-body
+            a(href=i.github)
+                button(type="button", class="btn btn-dark") GitHub

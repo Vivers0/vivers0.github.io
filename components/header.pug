@@ -1,0 +1,30 @@
+- 
+    json = [
+        {
+            link: 'https://t-do.ru/Vivers0',
+            fa: 'fa-telegram'
+        },
+        {
+            link: 'https://vk.com/savva0',
+            fa: 'fa-vk'
+        },
+        {
+            link: 'https://github.com/Vivers0',
+            fa: 'fa-github'
+        },
+        {
+            link: 'mailto:vivers.savva@gmail.com',
+            fa: 'fa-envelope'
+        }
+    ]
+
+block header
+    header.min-vh-100
+        .main-block
+            .main-text.text-center Vivers
+            .main-footer.text-center#mainFooter Web Developer
+        .main-icon.d-flex.justify-content-center
+            .icons.text-center
+                for i in json
+                    a.text-decoration-none(href=i.link)
+                        i(class='fa ml-4 '+i.fa, aria-hidden="true")

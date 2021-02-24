@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+   head
+       meta(charset="utf-8")
+       meta(name='viewport', content='width=device-width, initial-scale=1.0')
+       title= "Vivers"
+       link(rel='stylesheet', href='./components/css/main.css')
+       link(rel='stylesheet', href="./components/css/bootstrap.css")
+       link(rel='stylesheet', href='./components/css/animated.css')
+   body.bg-dark.w-auto#container
+       block main
+           include ./components/header.pug
+           include ./components/section.pug
+           include ./components/footer.pug
+       script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+       script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+       script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js')
+       script(src='https://use.fontawesome.com/b41c719ff9.js')
+       script(src='./components/js/main.js')
