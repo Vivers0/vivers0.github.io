@@ -1,0 +1,40 @@
+
+
+main {
+    margin: 0 100px 0 100px;
+}
+
+.card-main-text {
+    padding-left: 10%;
+}
+
+.card-model {
+    font-size: 1.5rem;
+}
+
+.card-type {
+    font-size: 1.2rem;
+}
+
+.card-appliance-description {
+    font-size: 1.15rem;
+}
+
+.card-table {
+    margin-top: 30px;
+}
+
+.card-table > table {
+    border: 1px solid #939598
+}
+
+.card-table > table > tbody> tr {
+    border: 1px solid #939598
+}
+
+.card-table > table > tbody> tr > td {
+    width: 40%;
+    font-weight: bold;
+    border: 1px solid #939598;
+    padding: 5px;
+}
