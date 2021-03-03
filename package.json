@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   }
 }
