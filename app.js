@@ -1,4 +1,4 @@
-const link = 'http://localhost:5678';
+const link = 'http://194.67.113.77:5678';
 
 async function updateData() {
     const promise = await axios({
@@ -60,6 +60,9 @@ const App = {
         '$store.state.list': {
           handler() {
             updateData().then(res => this.messages = res);
+            setInterval(() => {
+                updateData().then(res => this.messages = res);
+            }, 500)
           },
           immediate: true
         } 
